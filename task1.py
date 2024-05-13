@@ -9,7 +9,6 @@
 # Enter the second number: 3
 # Output value: Result: 8
 
-
 class Calculator:
     def __init__(self):
         while True:
@@ -23,7 +22,6 @@ class Calculator:
             elif choice ==0:
                 print('....Exit....')
                 break
-
 
             end_choice = int(input('Press 0- to exit or 3- to Calculator: '))
             if end_choice == 0:
@@ -63,4 +61,4 @@ class Calculator:
         self.result.append(squared_r)
         print(self.result)    
 
-a=Calculator()
+a = Calculator()
