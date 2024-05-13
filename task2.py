@@ -1,6 +1,6 @@
 #Seven ways to show even numbers and odd numbers
 #----------
-# beispiel 1
+# Beispiel 1: For Loop 
 numbers = list(range(0,100))
 even_numbers = []
 odd_numbers = []
@@ -10,50 +10,40 @@ for x in numbers:
     else:
         odd_numbers.append(x)
 
-
 print (even_numbers)
 print('-------')
 print (odd_numbers)
 
-
 #---------
-# beispiel 2
+# Beispiel 2
 even_ = list(range(0,100,2))
 odd_ = list(range(1,100,2))
-
 print (even_)
 print('-------')
 print (odd_)
 
-
 #---------
-# beispiel 3
-
+# Beispiel 3: List Comprehension (with if condition)
 numbers = list(range(0,100))
-
 even = [x for x in numbers if x % 2 ==0]
 odd = [x for x in numbers if x % 2 !=0]
-
 print (even)
 print('-------')
 print (odd)
 
 #--------
-# beispiel 4
+# Beispiel 4: User Input (start and end range)
 start = int(input('start N: '))
 end = int(input('end N: '))
 numbers = list(range(start,end))
-
 even = [x for x in numbers if x % 2 ==0]
 odd = [x for x in numbers if x % 2 !=0]
-
 print (even)
 print('-------')
 print (odd)
 
 #--------
-# beispiel 5
-
+# Beispiel 5: While Loop
 x = 0
 even = []
 odd = []
@@ -69,10 +59,8 @@ print('------')
 print(odd)
 
 # --------
-# beispiel 6
-
+# Beispiel 6: Filter (with lambda function)
 numbers = list(range(0,11))
-
 even = filter(lambda n: n % 2 ==0, numbers)
 print(list(even))
 
@@ -80,12 +68,10 @@ odd = filter(lambda n: n % 2 !=0, numbers)
 print(list(odd))
 
 # --------
-# beispiel 7
+# Beispiel 7: Bitwise Operator
 numbers = list(range(0,11))
-
 even = [x for x in numbers if x & 1 ==0]
 odd = [x for x in numbers if x & 1 !=0]
-
 print ('Even: ',even)
 print('-------')
 print ('Odd: ',odd)
